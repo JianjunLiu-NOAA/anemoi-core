@@ -1,0 +1,236 @@
+2026-01-12 18:02:18 INFO Running anemoi training command with overrides: ['--config-name=aifs_en_gdas_s1']
+2026-01-12 18:02:18 INFO Running anemoi training command with overrides: ['--config-name=aifs_en_gdas_s1']
+2026-01-12 18:02:18 INFO Running anemoi training command with overrides: ['--config-name=aifs_en_gdas_s1']
+2026-01-12 18:02:18 INFO Running anemoi training command with overrides: ['--config-name=aifs_en_gdas_s1']
+2026-01-12 18:02:19 INFO Prepending current user directory (/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train) to the search path.
+2026-01-12 18:02:19 INFO Search path is now: [provider=anemoi-cwd-searchpath-plugin, path=/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train, provider=hydra, path=pkg://hydra.conf, provider=main, path=pkg://anemoi.training/config]
+2026-01-12 18:02:19 INFO Prepending current user directory (/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train) to the search path.
+2026-01-12 18:02:19 INFO Search path is now: [provider=anemoi-cwd-searchpath-plugin, path=/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train, provider=hydra, path=pkg://hydra.conf, provider=main, path=pkg://anemoi.training/config]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/train/train.py:65: UserWarning: A custom validator is returning a value other than `self`.
+Returning anything other than `self` from a top level model validator isn't supported when validating via `__init__`.
+See the `model_validator` docs (https://docs.pydantic.dev/latest/concepts/validators/#model-validators) for more details.
+  self.config = BaseSchema(**config)
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/train/train.py:65: UserWarning: A custom validator is returning a value other than `self`.
+Returning anything other than `self` from a top level model validator isn't supported when validating via `__init__`.
+See the `model_validator` docs (https://docs.pydantic.dev/latest/concepts/validators/#model-validators) for more details.
+  self.config = BaseSchema(**config)
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+2026-01-12 18:02:20 INFO Prepending current user directory (/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train) to the search path.
+2026-01-12 18:02:20 INFO Search path is now: [provider=anemoi-cwd-searchpath-plugin, path=/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train, provider=hydra, path=pkg://hydra.conf, provider=main, path=pkg://anemoi.training/config]
+2026-01-12 18:02:20 INFO Prepending current user directory (/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train) to the search path.
+2026-01-12 18:02:20 INFO Search path is now: [provider=anemoi-cwd-searchpath-plugin, path=/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train, provider=hydra, path=pkg://hydra.conf, provider=main, path=pkg://anemoi.training/config]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/train/train.py:65: UserWarning: A custom validator is returning a value other than `self`.
+Returning anything other than `self` from a top level model validator isn't supported when validating via `__init__`.
+See the `model_validator` docs (https://docs.pydantic.dev/latest/concepts/validators/#model-validators) for more details.
+  self.config = BaseSchema(**config)
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/train/train.py:65: UserWarning: A custom validator is returning a value other than `self`.
+Returning anything other than `self` from a top level model validator isn't supported when validating via `__init__`.
+See the `model_validator` docs (https://docs.pydantic.dev/latest/concepts/validators/#model-validators) for more details.
+  self.config = BaseSchema(**config)
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+2026-01-12 18:02:22 INFO Running anemoi training command with overrides: ['--config-name=aifs_en_gdas_s1']
+2026-01-12 18:02:22 INFO Running anemoi training command with overrides: ['--config-name=aifs_en_gdas_s1']
+2026-01-12 18:02:24 INFO Prepending current user directory (/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train) to the search path.
+2026-01-12 18:02:24 INFO Search path is now: [provider=anemoi-cwd-searchpath-plugin, path=/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train, provider=hydra, path=pkg://hydra.conf, provider=main, path=pkg://anemoi.training/config]
+2026-01-12 18:02:24 INFO Prepending current user directory (/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train) to the search path.
+2026-01-12 18:02:24 INFO Search path is now: [provider=anemoi-cwd-searchpath-plugin, path=/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train, provider=hydra, path=pkg://hydra.conf, provider=main, path=pkg://anemoi.training/config]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/train/train.py:65: UserWarning: A custom validator is returning a value other than `self`.
+Returning anything other than `self` from a top level model validator isn't supported when validating via `__init__`.
+See the `model_validator` docs (https://docs.pydantic.dev/latest/concepts/validators/#model-validators) for more details.
+  self.config = BaseSchema(**config)
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/train/train.py:65: UserWarning: A custom validator is returning a value other than `self`.
+Returning anything other than `self` from a top level model validator isn't supported when validating via `__init__`.
+See the `model_validator` docs (https://docs.pydantic.dev/latest/concepts/validators/#model-validators) for more details.
+  self.config = BaseSchema(**config)
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+2026-01-12 18:02:25 INFO Running anemoi training command with overrides: ['--config-name=aifs_en_gdas_s1']
+2026-01-12 18:02:25 INFO Running anemoi training command with overrides: ['--config-name=aifs_en_gdas_s1']
+2026-01-12 18:02:27 INFO Prepending current user directory (/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train) to the search path.
+2026-01-12 18:02:27 INFO Prepending current user directory (/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train) to the search path.
+2026-01-12 18:02:27 INFO Search path is now: [provider=anemoi-cwd-searchpath-plugin, path=/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train, provider=hydra, path=pkg://hydra.conf, provider=main, path=pkg://anemoi.training/config]
+2026-01-12 18:02:27 INFO Search path is now: [provider=anemoi-cwd-searchpath-plugin, path=/scratch3/NCEPDEV/nems/Jianjun.Liu/git/JianjunLiu-NOAA/anemoi-core/NCEP/global-ensemble/train, provider=hydra, path=pkg://hydra.conf, provider=main, path=pkg://anemoi.training/config]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/train/train.py:65: UserWarning: A custom validator is returning a value other than `self`.
+Returning anything other than `self` from a top level model validator isn't supported when validating via `__init__`.
+See the `model_validator` docs (https://docs.pydantic.dev/latest/concepts/validators/#model-validators) for more details.
+  self.config = BaseSchema(**config)
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/train/train.py:65: UserWarning: A custom validator is returning a value other than `self`.
+Returning anything other than `self` from a top level model validator isn't supported when validating via `__init__`.
+See the `model_validator` docs (https://docs.pydantic.dev/latest/concepts/validators/#model-validators) for more details.
+  self.config = BaseSchema(**config)
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+[rank: 2] Seed set to 7239968
+[rank: 3] Seed set to 7239968
+[rank: 5] Seed set to 7239968
+[rank: 4] Seed set to 7239968
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+[rank: 0] Seed set to 7239968
+[rank: 1] Seed set to 7239968
+[rank: 7] Seed set to 7239968
+[rank: 6] Seed set to 7239968
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scalers/variable_tendency.py:57: UserWarning: Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?
+  warnings.warn("Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scalers/variable_tendency.py:57: UserWarning: Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?
+  warnings.warn("Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scalers/variable_tendency.py:57: UserWarning: Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?
+  warnings.warn("Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scalers/variable_tendency.py:57: UserWarning: Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?
+  warnings.warn("Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scalers/variable_tendency.py:57: UserWarning: Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?
+  warnings.warn("Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scalers/variable_tendency.py:57: UserWarning: Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?
+  warnings.warn("Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scalers/variable_tendency.py:57: UserWarning: Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?
+  warnings.warn("Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?")
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scalers/variable_tendency.py:57: UserWarning: Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?
+  warnings.warn("Dataset has no tendency statistics! Are you sure you want to use a tendency scaler?")
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/8
+Initializing distributed: GLOBAL_RANK: 2, MEMBER: 3/8
+Initializing distributed: GLOBAL_RANK: 1, MEMBER: 2/8
+Initializing distributed: GLOBAL_RANK: 3, MEMBER: 4/8
+Initializing distributed: GLOBAL_RANK: 4, MEMBER: 5/8
+Initializing distributed: GLOBAL_RANK: 5, MEMBER: 6/8
+Initializing distributed: GLOBAL_RANK: 6, MEMBER: 7/8
+Initializing distributed: GLOBAL_RANK: 7, MEMBER: 8/8
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 8 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+LOCAL_RANK: 1 - CUDA_VISIBLE_DEVICES: [0,1]
+LOCAL_RANK: 1 - CUDA_VISIBLE_DEVICES: [0,1]
+LOCAL_RANK: 1 - CUDA_VISIBLE_DEVICES: [0,1]
+LOCAL_RANK: 1 - CUDA_VISIBLE_DEVICES: [0,1]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+[rank: 6] Seed set to 50679776
+[rank: 0] Seed set to 7239968
+[rank: 4] Seed set to 36199840
+[rank: 2] Seed set to 21719904
+[rank: 7] Seed set to 57919744
+[rank: 1] Seed set to 14479936
+[rank: 5] Seed set to 43439808
+[rank: 3] Seed set to 28959872
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/pytorch_lightning/utilities/model_summary/model_summary.py:231: Precision 16-mixed is not supported by the model summary.  Estimated model size in MB will not be accurate. Using 32 bits instead.
+
+  | Name                  | Type                      | Params | Mode 
+----------------------------------------------------------------------------
+0 | model                 | AnemoiModelInterface      | 273 M  | train
+1 | loss                  | AlmostFairKernelCRPS      | 0      | train
+2 | metrics               | ModuleDict                | 0      | train
+3 | ensemble_ic_generator | EnsembleInitialConditions | 0      | train
+----------------------------------------------------------------------------
+273 M     Trainable params
+0         Non-trainable params
+273 M     Total params
+1,093.282 Total estimated model params size (MB)
+417       Modules in train mode
+0         Modules in eval mode
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:377: You have overridden `on_after_batch_transfer` in `LightningModule` but have passed in a `LightningDataModule`. It will use the implementation from `LightningModule` instance.
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:553: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  x_subset = x[subset_indices] if subset_indices is not None else x
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:553: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  x_subset = x[subset_indices] if subset_indices is not None else x
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:576: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  reshaped_scaler = reshaped_scaler[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:576: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  reshaped_scaler = reshaped_scaler[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:553: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  x_subset = x[subset_indices] if subset_indices is not None else x
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:553: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  x_subset = x[subset_indices] if subset_indices is not None else x
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:576: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  reshaped_scaler = reshaped_scaler[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:576: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  reshaped_scaler = reshaped_scaler[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/base.py:107: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  return x[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/base.py:107: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  return x[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/base.py:107: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  return x[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/base.py:107: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  return x[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:553: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  x_subset = x[subset_indices] if subset_indices is not None else x
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:553: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  x_subset = x[subset_indices] if subset_indices is not None else x
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:576: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  reshaped_scaler = reshaped_scaler[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:576: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  reshaped_scaler = reshaped_scaler[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/base.py:107: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  return x[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/base.py:107: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  return x[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:553: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  x_subset = x[subset_indices] if subset_indices is not None else x
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:576: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  reshaped_scaler = reshaped_scaler[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/base.py:107: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  return x[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:553: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  x_subset = x[subset_indices] if subset_indices is not None else x
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/scaler_tensor.py:576: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  reshaped_scaler = reshaped_scaler[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/training/losses/base.py:107: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:316.)
+  return x[subset_indices]
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/scratch3/NCEPDEV/nems/Jianjun.Liu/miniconda/envs/anemoi/lib/python3.12/site-packages/anemoi/utils/config.py:209: UserWarning: Modifying an instance of DotDict(). This class is intended to be immutable.
+  warnings.warn("Modifying an instance of DotDict(). This class is intended to be immutable.")
+`Trainer.fit` stopped: `max_steps=500` reached.
