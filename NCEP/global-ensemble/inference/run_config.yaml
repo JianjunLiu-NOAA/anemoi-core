@@ -1,11 +1,9 @@
-# cache_dir: "data/cache/gefs"   # 0.25 degree GEFSv12 files
-cache_dir: "/scratch3/NCEPDEV/nems/Jianjun.Liu/anemoi/anemoi-emc/gdas/inference/data/cache/gefs"
+cache_dir: "data/cache/gefs"   # 0.25 degree GEFSv12 files
 data_path: "data/ICs"  # generated ICs 
 pred_path: "data/forecast"   # forecast path
 lead_time: 384
 
-# checkpoint: "../train/outputs/checkpoint/8faf0777-a87d-4764-a0a9-933ef69e69a1/inference-last.ckpt" 
-checkpoint: "/scratch3/NCEPDEV/nems/Jianjun.Liu/anemoi/anemoi-emc/gdas/train/ensemble/aifs/training-output/checkpoint/8faf0777-a87d-4764-a0a9-933ef69e69a1/inference-last.ckpt" 
+checkpoint: "../train/outputs/checkpoint/8faf0777-a87d-4764-a0a9-933ef69e69a1/inference-last.ckpt" 
 
 resolution: '0p25'
 fjob: "fjob"
