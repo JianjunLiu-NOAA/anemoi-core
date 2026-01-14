@@ -5,9 +5,11 @@ This repository contains various configurations to guide users through a full ma
 
 The key steps to this pipeline include:
 
-	1. Data preprocessing using ufs2arco to create training, validation, and test datasets	
-	2. Model training using anemoi-core modules to train a graph-based model
-	3. Creating a forecast with anemoi-inference to run inference from a model checkpoint
+1. Data preprocessing using ufs2arco to create training, validation, and test datasets
+	
+2. Model training using anemoi-core modules to train a graph-based model
+	
+3. Creating a forecast with anemoi-inference to run inference from a model checkpoint
 
 
 ENVIRONMENT
@@ -17,11 +19,11 @@ Be sure to install this in your scratch directory, as the environment we will cr
 
 Setup the conda environment and install the ufs2arco:
 
-	Clone the package
+Clone the package
 	
 		git clone https://github.com/NOAA-EMC/ufs2arco.git
 
-	Create the conda environment and install the package
+Create the conda environment and install the package
 	
 		cd ufs2arco
 		conda env create -f environment.yaml
@@ -42,14 +44,14 @@ USAGE
 
 After the conda environments have been created, go follow instructions within each folder in this directory in order
 
-	Step 1: Data Creation (/data)
+Step 1: Data Creation (/data)
 	
-		Data preprocessing using ufs2arco to create training, validation, and test datasets
+	Data preprocessing using ufs2arco to create training, validation, and test datasets
 		
-	Step 2: Model Training (/training)
+Step 2: Model Training (/training)
 	
-		Model training using anemoi-core modules to train a graph-based model
+	Model training using anemoi-core modules to train a graph-based model
 		
-	Step 3: Create a Forecast (/inference)
+Step 3: Create a Forecast (/inference)
 	
-		Creating a forecast with anemoi-inference to run inference from a model checkpoint
+	Creating a forecast with anemoi-inference to run inference from a model checkpoint
