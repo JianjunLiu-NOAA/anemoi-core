@@ -46,12 +46,12 @@ After the conda environments have been created, go follow instructions within ea
 
 Step 1: Data Creation (/data)
 	
-	Data preprocessing using ufs2arco to create training, validation, and test datasets
+  Data preprocessing using ufs2arco to create training, validation, and test datasets
 		
 Step 2: Model Training (/training)
 	
-	Model training using anemoi-core modules to train a graph-based model
+  Model training using anemoi-core modules to train a graph-based model
 		
 Step 3: Create a Forecast (/inference)
 	
-	Creating a forecast with anemoi-inference to run inference from a model checkpoint
+  Creating a forecast with anemoi-inference to run inference from a model checkpoint
