@@ -1,0 +1,132 @@
+defaults:
+- data: zarr
+- dataloader: native_grid
+- datamodule: ens
+- diagnostics: evaluation
+- hardware: slurm
+- graph: encoder_decoder_only
+- model: transformer_ens
+- training: ensemble
+- _self_
+
+config_validation: True
+
+dataloader:
+  num_workers:
+    training: 8
+    validation: 8
+    test: 8
+  # global_batch_size = num_nodes * num_gpus_per_node * batch_size / num_gpus_per_model
+  batch_size:
+    training: 1
+    validation: 1
+    test: 1
+  training:
+    start: 2021-04-01
+    end: 2024-09-30 
+  validation:
+    start: 2024-10-01
+    end: 2025-03-31
+  test:
+    start: 2025-04-01
+    end: 2025-08-31
+  limit_batches:
+    training: null
+    validation: null
+   
+diagnostics:
+  plot:
+    callbacks: []
+ 
+hardware:
+  paths:
+    output: outputs/
+    data: ../data
+    graph: ../data
+    
+  files:
+    dataset: gdas_20210401_20250930_0p25_L13.zarr
+  num_gpus_per_ensemble: 2
+  num_gpus_per_model: 1
+
+model:
+  bounding:
+    - _target_: anemoi.models.layers.bounding.ReluBounding #[0, infinity)
+      variables:
+      - tp
+      - sh2
+      - q_50
+      - q_100
+      - q_150
+      - q_200
+      - q_250
+      - q_300
+      - q_400
+      - q_500
+      - q_600
+      - q_700
+      - q_850
+      - q_925
+      - q_1000 
+      
+    - _target_: anemoi.models.layers.bounding.FractionBounding # fraction of tp
+      variables:
+      - cp
+      min_val: 0
+      max_val: 1
+      total_var: tp
+
+graph:
+  nodes:
+    hidden:
+      node_builder:
+        _target_: anemoi.graphs.nodes.ReducedGaussianGridNodes 
+        grid: o96 # o48, o96, n320...
+  attributes:
+    nodes:
+      area_weight:
+        _target_: anemoi.graphs.nodes.attributes.IsolatitudeAreaWeights  # SphericalAreaWeights; IsolatitudeAreaWeights / no fill_value
+        norm: unit-max
+        # fill_value: 0
+        
+training:
+
+  ensemble_size_per_device: 1
+  max_epochs: null
+  max_steps: 500 #300000
+
+  training_loss:
+    _target_: anemoi.training.losses.kcrps.AlmostFairKernelCRPS
+    scalers: ['pressure_level', 'general_variable', 'nan_mask_weights', 'node_weights']
+    ignore_nans: False
+    alpha: 0.95
+    no_autocast: True
+    
+  validation_metrics:
+    fkcrps:
+      _target_: anemoi.training.losses.kcrps.AlmostFairKernelCRPS
+      scalers: []
+      alpha: 0.95
+      ignore_nans: False
+  
+  rollout:
+    start: 1
+    epoch_increment: 0
+    max: 1
+    
+  lr:
+    warmup: 1000 
+    rate: 6.25e-5   # effective LR = 1.0e-3*8/16=5.0e-4 for 8 global batch size; =1.0e-3*4/16=2.5e-4 4 global batch size/
+    iterations: ${training.max_steps} # NOTE: When max_epochs < max_steps, scheduler will run for max_steps
+    min: 0.0
+
+  optimizer:
+    zero: False
+    kwargs:
+      betas: [0.9, 0.95]
+      weight_decay: 0.1
+
+# Changes in per-gpu batch_size should come with a rescaling of the local_lr
+# in order to keep a constant global_lr
+# global_lr = local_lr * num_gpus_per_node * num_nodes / gpus_per_model
+
