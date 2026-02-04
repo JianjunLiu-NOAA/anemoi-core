@@ -1,5 +1,5 @@
 
-OVERVIEW
+**OVERVIEW**
 
 This repository contains various configurations to guide users through a full machine learning pipeline for weather prediction!
 
@@ -13,7 +13,7 @@ The key steps to this pipeline include:
 
 
 
-ENVIRONMENT
+**ENVIRONMENT**
 
 Before getting started, you will need to set up a conda environment. First, if you have not already, use these instructions to set up miniconda: https://www.anaconda.com/docs/getting-started/miniconda/install#linux. 
 Be sure to install this in your scratch directory, as the environment we will create is quite big.
@@ -44,7 +44,7 @@ Setup the conda environment and install the anemoi from ECMWF repository:
 Note: To install from a personal repository, clone the anemoi-core package from your own repository to ursa and install the anemoi package following the ufs2arco installation instructions. Subsequent updates to your local anemoi-core repository on ursa will be automatically synchronized with the anemoi environment.
 
 
-USAGE
+**USAGE**
 
 After the conda environments have been created, go follow instructions within each folder in this directory in order
 
