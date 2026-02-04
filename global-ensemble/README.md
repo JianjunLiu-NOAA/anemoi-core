@@ -12,6 +12,8 @@ The key steps to this pipeline include:
 3. Creating a forecast with anemoi-inference to run inference from a model checkpoint
 
 
+
+
 ENVIRONMENT
 
 Before getting started, you will need to set up a conda environment. First, if you have not already, use these instructions to set up miniconda: https://www.anaconda.com/docs/getting-started/miniconda/install#linux. 
@@ -41,6 +43,8 @@ Setup the conda environment and install the anemoi from ECMWF reposity:
 		pip install flash-attn mpi4py trimesh 'numpy<2.3' 'earthkit-data<0.14.0' 
 
 Note: To install from a personal repository, clone the anemoi-core package from your own repository to ursa and install the anemoi package following the ufs2arco installation instructions. Subsequent updates to your local anemoi-core repository on ursa will be automatically synchronized with the anemoi environment.
+
+
 
 USAGE
 
