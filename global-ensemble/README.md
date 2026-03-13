@@ -39,7 +39,8 @@ Setup the conda environment and install the anemoi from ECMWF repository:
 		conda activate anemoi
 		module load cuda
 		pip install anemoi-datasets==0.5.26 anemoi-graphs==0.6.4 anemoi-models==0.9.1 anemoi-training==0.6.1 anemoi-inference==0.7.0
-		pip install flash-attn mpi4py trimesh 'numpy<2.3' 'earthkit-data<0.14.0' 
+		pip install flash-attn --no-build-isolation
+                pip install mpi4py trimesh 'numpy<2.3' 'earthkit-data<0.14.0' 
 
 Note: To install from a personal repository, clone the anemoi-core package from your own repository to ursa and install the anemoi package following the ufs2arco installation instructions. Subsequent updates to your local anemoi-core repository on ursa will be automatically synchronized with the anemoi environment.
 
