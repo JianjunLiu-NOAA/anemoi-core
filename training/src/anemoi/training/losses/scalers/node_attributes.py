@@ -10,7 +10,7 @@
 
 import logging
 
-import numpy as np
+import torch
 from torch_geometric.data import HeteroData
 
 from anemoi.training.losses.scalers.base_scaler import BaseScaler
@@ -58,10 +58,10 @@ class GraphNodeAttributeScaler(BaseScaler):
         self.nodes_attribute_name = nodes_attribute_name
         self.inverse = inverse
 
-    def get_scaling_values(self) -> np.ndarray:
+    def get_scaling_values(self) -> torch.Tensor:
         scaler_values = self.nodes[self.nodes_attribute_name].squeeze()
         scaler_values = ~scaler_values if self.inverse else scaler_values
-        return self.output_mask.apply(scaler_values, dim=0, fill_value=0.0).numpy()
+        return self.output_mask.apply(scaler_values, dim=0, fill_value=0.0)
 
 
 class ReweightedGraphNodeAttributeScaler(GraphNodeAttributeScaler):
@@ -94,13 +94,16 @@ class ReweightedGraphNodeAttributeScaler(GraphNodeAttributeScaler):
             norm=norm,
             **kwargs,
         )
-        if self.scaling_mask_attribute_name not in self.nodes:
-            error_msg = f"scaling_mask_attribute_name {self.scaling_mask_attribute_name} not found in graph_object"
+        if self.scaling_mask_attribute_name not in self.nodes.node_attrs():
+            error_msg = f"{self.__class__.__module__}.{self.__class__.__name__}: "
+            error_msg += f"scaling_mask_attribute_name '{self.scaling_mask_attribute_name}' not found in graph_data - "
+            avail_masks = [k for k, v in self.nodes.items() if getattr(v, "dtype", None) == torch.bool]
+            error_msg += f"available boolean node attributes are: {avail_masks}"
             raise KeyError(error_msg)
 
-    def reweight_attribute_values(self, values: np.ndarray) -> np.ndarray:
+    def reweight_attribute_values(self, values: torch.Tensor) -> torch.Tensor:
         scaling_mask = self.nodes[self.scaling_mask_attribute_name].squeeze()
-        unmasked_sum = np.sum(values[~scaling_mask])
+        unmasked_sum = torch.sum(values[~scaling_mask])
         weight_per_masked_node = (
             self.weight_frac_of_total / (1 - self.weight_frac_of_total) * unmasked_sum / sum(scaling_mask)
         )
@@ -113,6 +116,6 @@ class ReweightedGraphNodeAttributeScaler(GraphNodeAttributeScaler):
         )
         return values
 
-    def get_scaling_values(self, **kwargs) -> np.ndarray:
+    def get_scaling_values(self, **kwargs) -> torch.Tensor:
         attribute_values = super().get_scaling_values(**kwargs)
         return self.reweight_attribute_values(attribute_values)

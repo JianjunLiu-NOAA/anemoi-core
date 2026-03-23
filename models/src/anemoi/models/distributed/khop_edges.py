@@ -100,6 +100,44 @@ def sort_edges_1hop_sharding(
     return edge_attr, edge_index, [], []
 
 
+def shard_edges_1hop(
+    edge_attr: Tensor,
+    edge_index: Adj,
+    src_size: int,
+    dst_size: int,
+    model_comm_group: Optional[ProcessGroup],
+) -> tuple[Tensor, Adj, tuple[list[torch.Size], list[torch.Size]]]:
+    """Sort and shard edges for 1-hop sharding.
+
+    Parameters
+    ----------
+    edge_attr : Tensor
+        Edge attributes
+    edge_index : Adj
+        Edge index
+    src_size : int
+        Number of source nodes
+    dst_size : int
+        Number of destination nodes
+    model_comm_group : ProcessGroup, optional
+        Model communication group
+
+    Returns
+    -------
+    tuple[Tensor, Adj, tuple[list[torch.Size], list[torch.Size]]]
+        Sharded edge_attr, sharded edge_index, and tuple of (shapes_edge_attr, shapes_edge_idx)
+    """
+    from anemoi.models.distributed.graph import shard_tensor
+
+    num_nodes = (src_size, dst_size)
+    edge_attr, edge_index, shapes_edge_attr, shapes_edge_idx = sort_edges_1hop_sharding(
+        num_nodes, edge_attr, edge_index, model_comm_group
+    )
+    edge_index = shard_tensor(edge_index, 1, shapes_edge_idx, model_comm_group)
+    edge_attr = shard_tensor(edge_attr, 0, shapes_edge_attr, model_comm_group)
+    return edge_attr, edge_index, (shapes_edge_attr, shapes_edge_idx)
+
+
 def sort_edges_1hop_chunks(
     num_nodes: Union[int, tuple[int, int]],
     edge_attr: Tensor,
@@ -155,15 +193,15 @@ def sort_edges_1hop_chunks(
     return edge_attr_list, edge_index_list
 
 
-def drop_unconnected_src_nodes(x_src: Tensor, edge_index: Adj, num_nodes: tuple[int, int]) -> tuple[Tensor, Adj]:
+def drop_unconnected_src_nodes(
+    x_src: Tensor, edge_index: Adj, num_nodes: tuple[int, int]
+) -> tuple[Tensor, Adj, Tensor]:
     """Drop unconnected nodes from x_src and relabel edges.
 
     Parameters
     ----------
     x_src : Tensor
         source node features
-    edge_attr : Tensor
-        edge attributes
     edge_index : Adj
         edge index
     num_nodes : tuple[int, int]
@@ -171,8 +209,9 @@ def drop_unconnected_src_nodes(x_src: Tensor, edge_index: Adj, num_nodes: tuple[
 
     Returns
     -------
-    tuple[Tensor, Adj]
-        reduced node features, relabeled edge index (contiguous, starting from 0)
+    tuple[Tensor, Adj, Tensor]
+        reduced node features, relabeled edge index (contiguous, starting from 0),
+        indices of connected source nodes
     """
     connected_src_nodes = torch.unique(edge_index[0])
     dst_nodes = torch.arange(num_nodes[1], device=x_src.device)
@@ -184,4 +223,4 @@ def drop_unconnected_src_nodes(x_src: Tensor, edge_index: Adj, num_nodes: tuple[
         relabel_nodes=True,
     )
 
-    return x_src[connected_src_nodes], edge_index_new
+    return x_src[connected_src_nodes], edge_index_new, connected_src_nodes
