@@ -93,7 +93,7 @@ training:
 
   ensemble_size_per_device: 1
   max_epochs: null
-  max_steps: 500 #300000
+  max_steps: 300000
 
   training_loss:
     _target_: anemoi.training.losses.kcrps.AlmostFairKernelCRPS
